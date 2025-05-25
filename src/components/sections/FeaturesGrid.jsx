@@ -15,7 +15,7 @@ import { useTranslation } from '../../hooks/useTranslation';
 import Card from '../ui/Card';
 
 const FeaturesGrid = () => {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1
@@ -24,50 +24,50 @@ const FeaturesGrid = () => {
   const features = [
     {
       icon: Search,
-      title: 'AI-Powered Legal Search',
-      description: 'Get comprehensive legal information using advanced AI technology',
+      title: t('features.search.title'),
+      description: t('features.search.description'),
       color: 'from-blue-500 to-blue-600'
     },
     {
       icon: Calculator,
       title: t('calculator.title'),
-      description: 'Calculate your legal rights based on specific situations',
+      description: t('calculator.description'),
       color: 'from-green-500 to-green-600'
     },
     {
       icon: FileText,
       title: t('documents.title'),
-      description: 'Download legal forms in multiple Indian languages',
+      description: t('documents.description'),
       color: 'from-purple-500 to-purple-600'
     },
     {
       icon: Phone,
       title: t('emergency.title'),
-      description: 'Quick access to legal aid and emergency services',
+      description: t('emergency.description'),
       color: 'from-red-500 to-red-600'
     },
     {
       icon: MessageSquare,
-      title: 'AI Legal Assistant',
-      description: 'Chat with AI for instant legal guidance and advice',
+      title: t('chatbot.title'),
+      description: t('chatbot.description'),
       color: 'from-indigo-500 to-indigo-600'
     },
     {
       icon: Volume2,
-      title: 'Voice Support',
-      description: 'Ask questions and get answers using voice commands',
+      title: t('voice.title'),
+      description: t('voice.description'),
       color: 'from-orange-500 to-orange-600'
     },
     {
       icon: Globe,
-      title: 'Multi-Language Support',
-      description: 'Available in English, Hindi, Marathi, and Telugu',
+      title: t('language.title'),
+      description: t('language.description'),
       color: 'from-teal-500 to-teal-600'
     },
     {
       icon: Shield,
-      title: 'Privacy Protected',
-      description: 'Your legal queries are completely confidential and secure',
+      title: t('privacy.title'),
+      description: t('privacy.description'),
       color: 'from-gray-500 to-gray-600'
     }
   ];
@@ -104,13 +104,13 @@ const FeaturesGrid = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Powerful Features for
+            {t('features.grid.title')}
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              {' '}Legal Empowerment
+              {' '}{t('features.grid.subtitle')}
             </span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Access comprehensive legal tools designed specifically for Indian laws and rights
+            {t('features.grid.description')}
           </p>
         </motion.div>
 
