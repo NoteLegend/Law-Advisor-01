@@ -228,31 +228,31 @@ const EmergencyContacts = () => {
         >
           <Card className="p-8 bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-700">
             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 text-center">
-              Emergency Guidelines
+              {t('emergency.guidelines.title')}
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
               <div>
                 <h4 className="font-semibold text-red-800 dark:text-red-200 mb-2">
-                  🚨 Immediate Danger
+                  🚨 {t('emergency.guidelines.immediateDanger.title')}
                 </h4>
                 <p className="text-gray-700 dark:text-gray-300">
-                  Call 100 for police immediately. Stay in a safe location and follow police instructions.
+                  {t('emergency.guidelines.immediateDanger.description')}
                 </p>
               </div>
               <div>
                 <h4 className="font-semibold text-red-800 dark:text-red-200 mb-2">
-                  ⚖️ Legal Emergency
+                  ⚖️ {t('emergency.guidelines.legalEmergency.title')}
                 </h4>
                 <p className="text-gray-700 dark:text-gray-300">
-                  Contact legal aid services during business hours or call the 24/7 helpline for urgent matters.
+                  {t('emergency.guidelines.legalEmergency.description')}
                 </p>
               </div>
               <div>
                 <h4 className="font-semibold text-red-800 dark:text-red-200 mb-2">
-                  📋 Important Tips
+                  📋 {t('emergency.guidelines.importantTips.title')}
                 </h4>
                 <p className="text-gray-700 dark:text-gray-300">
-                  Keep important documents safe, record incidents when possible, and always prioritize your safety.
+                  {t('emergency.guidelines.importantTips.description')}
                 </p>
               </div>
             </div>
